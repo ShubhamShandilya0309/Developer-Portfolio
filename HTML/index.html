@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shubham's Website</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="icon" href="../src/favicon.ico">
+    <style>
+        @media (max-width: 720px){
+        .introduction{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 3fr;
+        }
+        .image{
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 2;
+            margin-right: 10px;
+        }
+        .short{
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-row-end: 2;
+            grid-column-end: 3;
+            height: min-content;
+        }
+        .long{
+            grid-area :2 1 2 3;
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 3;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="important links">
+        <h3><a href="contact.html" target="_blank">About Me</a></h3>
+        <h3><a href="educationTable.html" target="_blank">Educational Background</a></h3>
+        <h3><a href="skills.html" target="_blank">Skills</a></h3>
+        <h3><a href="contactForm.html" target="_blank">Contact Me</a></h3>
+    </div>
+    <br>
+    <div class="introduction grid">
+        <div class="image">
+            <img src="../src/ImageHTML.jpeg" alt="Author Image" >
+        </div>
+        <div class="short ">
+            <h1>Shubham Shandilya</h1>
+            <h3><em>Shubham Shandilya,<strong> Proficient in Frontend Web Development.</strong></em></h3>
+        </div>
+        <div class="long ">
+            <p>Hi, I'm Shubham Shandilya, a 3rd-year B.Tech undergrad at DTU in Computer Engineering with an 8.53 CGPA. Web development enthusiast, skilled in DSA, and passionate about exploring new technologies.</p>
+        </div>
+    </div>
+    <div class="important" >
+        <h2>Hobbies :</h2>
+        <ul>
+            <li>Learning New Technologies</li>
+            <li>Reading Books</li>
+            <li>Playing VolleyBall and Table Tennis</li>
+            <li>Doing Workout</li>
+        </ul>
+    </div>
+    <div class="important" >
+        <h2>Educational Achivements :</h2>
+        <ul>
+            <li>10th grade : 91%</li>
+            <li>12th grade : 95.6%</li>
+            <li>Qualified JEE Mains and Advanced</li>
+            <li>Scored 8.53 CGPA till 4th Semester</li>
+        </ul>
+    </div>
+    <div class="important">
+        <h2>Favorite Websites :</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+            <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://v3.fresources.tech/subject?branchId=63066b909cbab109372b82b0&courseId="
+                    target="_blank">Fresources</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
